@@ -1,16 +1,15 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 
+import pathify from 'vuex-pathify'
+
 Vue.use(Vuex)
 
+const modules ={
+
+}
+
 export default new Vuex.Store({
-  state: {
-
-  },
-  mutations: {
-
-  },
-  actions: {
-
-  }
+  plugins :[pathify.plugin],
+  modules : modules
 })
